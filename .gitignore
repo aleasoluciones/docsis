@@ -40,3 +40,7 @@ regression/*
 .cproject
 .project
 .settings/*
+backup*
+doc-pak/*
+*.deb
+description-pak
