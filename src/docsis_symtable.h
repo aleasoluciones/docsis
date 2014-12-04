@@ -397,6 +397,10 @@ symbol_type symtable[NUM_IDENTIFIERS] =  {
 { 190,    "NSIEncapsulation",                  2,      188,    (encode_nothing),        (decode_aggregate),      0,           0             }, /* TLV 43.5.2 */
 { 191,    "NSIEncapsulationSingleQTag",        2,      190,    (encode_ushort),         (decode_ushort),         1,           4095          }, /* TLV 43.5.2.2 */
 { 191,    "NSIEncapsulationDualQTag",          3,      190,    (encode_dual_qtag),      (decode_dual_qtag),      0,           0             }, /* TLV 43.5.2.3 */
+{ 510,    "ExtendedCMTSMICConfiguration",      6,      130,    (encode_nothing),        (decode_aggregate),      0,           0             }, /* TLV 43.6 MULPIv3.0-I25 Annex C.1.1.18.1.6*/
+{ 511,    "ExtendedCMTSMICHMACDigestType",     1,      510,    (encode_hexstr),         (decode_hexstr),         0,           0xFF          }, /* TLV 43.6.1 MULPIv3.0-I25 Annex C.1.1.18.1.6.1 */
+{ 512,    "ExtendedCMTSMICHMACBitmap",         2,      510,    (encode_hexstr),         (decode_hexstr),         0,           0             }, /* TLV 43.6.2 MULPIv3.0-I25 Annex C.1.1.18.1.6.2 */
+{ 513,    "ExtendedCMTSMICHMACDigest",         3,      510,    (encode_hexstr),         (decode_hexstr),         0,           0             }, /* TLV 43.6.3 MULPIv3.0-I25 Annex C.1.1.18.1.6.3 */
 { 131,    "VendorIdentifier",                  8,      130,    (encode_hexstr),         (decode_hexstr),         3,           3             }, /* TLV 43.8 */
 
 { 208,    "DUTFiltering",                      45,     0,      (encode_nothing),        (decode_aggregate),      0,           0             }, /* TLV 45 MULPIv3.0-I24 Annex C.1.1.24 */
@@ -413,6 +417,11 @@ symbol_type symtable[NUM_IDENTIFIERS] =  {
 { 174,    "SubMgmtControl6",                   63,     0,      (encode_hexstr),         (decode_hexstr),         2,           2             }, /* TLV 63 MULPIv3.0-I24 Annex C.1.1.19.5 */
 
 /*{ 156, "SnmpMibObject",                    64, 0,    (encode_nothing),     (decode_snmp_object),    1,        2048       },*/
+
+{ 500, "CMTSStaticMulticastSessionEncodings",  64,     0,    (encode_nothing),          (decode_aggregate),      0,           0	            },
+{ 501, "CMTSStaticMulticastSessionGroup",      1,      500,  (encode_ip),               (decode_ip),             4,           16            },
+{ 502, "CMTSStaticMulticastSessionSource",     2,      500,  (encode_ip),               (decode_ip),             4,           16            },
+{ 503, "CMTSStaticMulticastSessionCMIM",       3,      500,  (encode_hexstr),           (decode_hexstr),         0,           0             },
 
 /* eRouter TLVs */
 { 175,    "eRouter",                           202,    0,      (encode_nothing),        (decode_aggregate),      0,           0             }, /* TLV 202 eRouter-I12 */
