@@ -5,4 +5,5 @@ before_install:
   - sudo apt-get install -y automake libtool libsnmp-dev bison make gcc flex
   - ./autogen.sh
 
-install: "./configure && make"
+install: 
+  - ./configure && make && make install
