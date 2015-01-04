@@ -6,4 +6,4 @@ before_install:
   - ./autogen.sh
 
 install: 
-  - ./configure && make && make install
+  - ./configure && make
