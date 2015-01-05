@@ -7,7 +7,5 @@ before_install:
 
 script: 
   - ./configure && make && sudo make install
-
-after_success:
   - cd tests/
   - ./TEST_0001.sh
