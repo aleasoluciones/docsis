@@ -1,17 +1,14 @@
 Main 
 {
-	NetworkAccess 1;
-	UsServiceFlow
-	{
-		UsServiceFlowRef 1;
-		QosParamSetType 7;
-	}
-	DsServiceFlow
-	{
-		DsServiceFlowRef 2;
-		QosParamSetType 7;
-	}
-	/* CmMic 1a3ba2e7666290b9725605718c01f967; */
-	/* CmtsMic c87e7754dcad17adb9b6d4a206512667; */
-	/*EndOfDataMkr*/
+NetworkAccess 1;
+UsServiceFlow
+{
+UsServiceFlowRef 1;
+QosParamSetType 7;
+}
+DsServiceFlow
+{
+DsServiceFlowRef 2;
+QosParamSetType 7;
+}
 }
