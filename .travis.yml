@@ -8,6 +8,4 @@ before_install:
 script: 
   - ./configure && make && sudo make install
   - cd tests/
-  - ../src/docsis -e docsis1_0_2class_non_rfc2669.txt key docsis1_0_2class_non_rfc2669.cm
-  - ../src/docsis -d docsis1_0_2class_non_rfc2669.cm
-#  - ./RunTests.sh
+  - ./RunTests.sh
