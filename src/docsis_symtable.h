@@ -50,7 +50,7 @@ symbol_type symtable[NUM_IDENTIFIERS] =  {
 { 0,      "/* Pad */",                         0,      0,      (encode_nothing),        (decode_special),        0,           0             },
 { 1,      "DownstreamFrequency",               1,      0,      (encode_uint),           (decode_uint),           88000000,    1008000000    }, /* TLV 1 MULPIv3.0-I24 Annex C.1.1.1 */
 { 2,      "UpstreamChannelId",                 2,      0,      (encode_uchar),          (decode_uchar),          0,           255           }, /* TLV 2 MULPIv3.0-I24 Annex C.1.1.2 */
-/* { 3,      "NetworkAccess",                     3,      0,      (encode_uchar),          (decode_uchar),          0,           1             }, */ /* TLV 3 MULPIv3.0-I24 Annex C.1.1.3 */
+{ 3,      "NetworkAccess",                     3,      0,      (encode_uchar),          (decode_uchar),          0,           1             }, /* TLV 3 MULPIv3.0-I24 Annex C.1.1.3 */
 
 /* Class of Service */
 { 6,      "ClassOfService",                    4,      0,      (encode_nothing),        (decode_aggregate),      0,           0             }, /* TLV 4 MULPIv3.0-I24 Annex C.1.1.4 */
