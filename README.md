@@ -16,21 +16,16 @@ This was tested on Ubuntu 14.04 amd64 (little endian) ~~and Debian 7.5 Sparc64 (
 
 Dependencies:
 
-.. code:: bash
-
-  apt-get install automake libtool libsnmp-dev bison make gcc flex git
+    apt-get install automake libtool libsnmp-dev bison make gcc flex git
 
 Installation steps for Debian based systems:
 
-.. code:: bash
-
-   git clone https://github.com/AdrianSimionov/docsis.git
-   cd docsis
-   ./autogen.sh
-   ./configure
-   make
-   make install (optional)
-   
+    git clone https://github.com/AdrianSimionov/docsis.git
+    cd docsis
+    ./autogen.sh
+    ./configure
+    make
+    make install (optional)
 
 Windows and Mac OS X
 --------------------
