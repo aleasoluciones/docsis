@@ -12,7 +12,7 @@ This build is an experimental one and is based on a fork from the GitHub project
 Linux/Unix
 ----------
 
-This was tested on Ubuntu 14.04 amd64 (little endian) ~~and Debian 7.5 Sparc64 (big endian)~~ and it is known to work without issues. It is know to have issues on Sparc64 (big endian) CPU.
+This was tested on Ubuntu 14.04 amd64 (little endian) ~~and Debian 7.5 Sparc64 (big endian)~~ and it is known to work without issues. It is known to have issues on Sparc64 (big endian) CPU.
 
 Dependencies:
 
