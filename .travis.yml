@@ -7,11 +7,10 @@ before_install:
   - ./autogen.sh
 
 script: 
-  - ./configure CFLAGS='-fprofile-arcs -ftest-coverage'
+  - ./configure CFLAGS='-g -O0 -fprofile-arcs -ftest-coverage'
   - make && sudo make install
   - cd tests/
-#  - ./RunTests.sh
-  - ../src/docsis -d BaseConfig.cm
+  - ./RunTests.sh
   - cd ..
 
 after_success:
