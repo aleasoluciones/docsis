@@ -12,6 +12,7 @@ script:
   - cd tests/
 #  - ./RunTests.sh
   - ../src/docsis -d BaseConfig.cm
+  - cd ..
 
 after_success:
-  - coveralls --verbose -b src
+  - coveralls
