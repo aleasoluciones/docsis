@@ -11,7 +11,8 @@ script:
   - make && sudo make install
   - cd tests/
   - ./RunTests.sh
-  - cd ..
+  - cd ../src
 
 after_success:
-  - coveralls --gcov-options '\-lp'
+  - coveralls --exclude docsis_lex.c --exclude docsis_yy.c --gcov-options '\-lp'
+  - ls -ltra
