@@ -1,9 +1,8 @@
-os: osx
-
 language: c
 
 before_install:
-  - sudo port install autoconf automake libtool glib2-devel bison flex net-snmp
+  - sudo apt-get update -qq
+  - sudo apt-get install -y automake libtool libsnmp-dev bison make gcc flex snmp-mibs-downloader
   - sudo pip install cpp-coveralls
   - ./autogen.sh
 
