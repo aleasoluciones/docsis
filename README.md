@@ -25,6 +25,9 @@ Dependencies:
     openSUSE/SLES:
     zypper install autoconf automake libtool glib2-devel bison flex net-snmp-devel
     
+    Mac OS X:
+    Installing with MacPorts:
+    sudo port install autoconf automake libtool glib2-devel bison flex net-snmp
     
 Installation steps for Linux based systems:
 
